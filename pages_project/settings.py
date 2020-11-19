@@ -126,4 +126,4 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'pages_project/static'),
 ]
 LOGIN_REDIRECT_URL = reverse_lazy('quote_list')
-LOGOUT_REDIRECT_URL = 'body/'
+LOGOUT_REDIRECT_URL = reverse_lazy('quote_list')
