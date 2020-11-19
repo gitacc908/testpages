@@ -3,6 +3,7 @@ from .models import Pages
 from .forms import ContactForm
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail, get_connection
+
 # Create your views here.
 
 
@@ -44,3 +45,4 @@ def contact(request):
 	return render(request, 'pages/contact.html', 
 		{'form': form, 'page_list': Pages.objects.all(),
 		'submitted': submitted})
+

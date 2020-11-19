@@ -7,4 +7,5 @@ urlpatterns = [
 	path('', index, {'pagename': ''}, name='home'),
 	path('contact', contact, name='contact'),
 	path('<str:pagename>', index, name='index'),
+	
 	]
